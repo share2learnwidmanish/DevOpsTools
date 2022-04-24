@@ -1,0 +1,51 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@share2learnwidmanish 
+anujdevopslearn
+/
+InterviewQuestions
+Public
+Code
+Issues
+Pull requests
+2
+Actions
+Projects
+Wiki
+Security
+Insights
+InterviewQuestions/InstallationGuides/SonarQube.txt
+@anujdevopslearn
+anujdevopslearn Update SonarQube.txt
+Latest commit 0912919 15 days ago
+ History
+ 1 contributor
+16 lines (12 sloc)  446 Bytes
+   
+#Login with root user and run below commands
+
+apt update
+apt install default-jdk unzip
+
+#Login with Ubuntu User and run below commands
+
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
+unzip sonarqube-9.4.0.54424.zip 
+ls -lart
+mv sonarqube-9.4.0.54424 sonarqube
+rm sonarqube-9.4.0.54424.zip
+cd sonarqube/bin/linux-x86-64/
+./sonar.sh start
+
+## Check the status with 
+./sonar.sh status
+
+#Then Start Accessing SonarQube using URL 	http://<IP-Address>:9000
+
+When you login the default username and password is admin/admin
+
